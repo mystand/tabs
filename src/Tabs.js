@@ -69,11 +69,11 @@ export default class Tabs extends React.Component {
     }
 
     const eventKeyCode = e.keyCode;
-    if (eventKeyCode === KeyCode.RIGHT || eventKeyCode === KeyCode.DOWN) {
+    if (eventKeyCode === KeyCode.RIGHT) {
       e.preventDefault();
       const nextKey = this.getNextActiveKey(true);
       this.onTabClick(nextKey);
-    } else if (eventKeyCode === KeyCode.LEFT || eventKeyCode === KeyCode.UP) {
+    } else if (eventKeyCode === KeyCode.LEFT) {
       e.preventDefault();
       const previousKey = this.getNextActiveKey(false);
       this.onTabClick(previousKey);
