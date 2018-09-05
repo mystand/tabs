@@ -143,11 +143,11 @@ var _initialiseProps = function _initialiseProps() {
     }
 
     var eventKeyCode = e.keyCode;
-    if (eventKeyCode === KeyCode.RIGHT || eventKeyCode === KeyCode.DOWN) {
+    if (eventKeyCode === KeyCode.RIGHT) {
       e.preventDefault();
       var nextKey = _this2.getNextActiveKey(true);
       _this2.onTabClick(nextKey);
-    } else if (eventKeyCode === KeyCode.LEFT || eventKeyCode === KeyCode.UP) {
+    } else if (eventKeyCode === KeyCode.LEFT) {
       e.preventDefault();
       var previousKey = _this2.getNextActiveKey(false);
       _this2.onTabClick(previousKey);
